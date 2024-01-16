@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+
+
+	<body>
+	
+	
+	<div class="container">
+    <div class="modal fade" id="enquiry_modal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <img src="images/enquiry_icon.png"/>
+          <h4>--- Business Enquiry ---</h4>
+        </div>
+        <div class="modal-body">
+       
+        
+         <form>
+         <div class="row">
+         <div class="col-md-12">
+         	<label>Name</label>
+               <i class="fa fa-user-o input-inner-icon"></i>
+         	<input type="text" name="" class="form-control" placeholder="Enter Your Name">
+         	</div>
+           <div class="col-md-12">
+         	<label>Email</label>
+         	<i class="fa fa-envelope-o input-inner-icon"></i>
+         	<input type="text" name="" class="form-control" placeholder="Enter Your Email">
+         </div>	
+          <div class="col-md-12">
+         	<label>Phone Number</label>
+         	<img src='images/phone_inner_icon.png' class="input-img"/>
+         	<input type="text" name="" class="form-control" placeholder="Enter Your Phone Number" >
+         	</div>
+         	 <div class="col-md-12">
+         	<label>Your Message</label>
+         	<img src='images/message_inner_icon.png' class="input-img"/>
+         	<textarea class="form-control-textarea" rows="3" cols="3" placeholder="Write Your Message Here"></textarea>
+         	</div>
+         	<center><button class="btn btn-primary">Send</button></center>
+         	</div>
+         </form>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+	<nav class="fh5co-nav" role="navigation">
+		
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div id="fh5co-logo">
+							<a href="index.html"><img src="images/radian_logo.png" /></a>
+						</div>
+					</div>
+                        
+
+                        <div class="menu-1">
+						<ul class="" >
+							<li class="active offcanvas-has-dropdown">
+							<a ><img src="images/nav_icon/home_icon.png"/>&nbsp;The Company</a>
+							<ul class="dropdown sub-category">
+									<li><a href="philosophy.html"><img src="images/philosophy.png"/>&nbsp;Our Philosophy</a></li>
+									<li><a href="sustainability.html"><img src="images/sustainability.png"/>&nbsp;Sustainability</a></li>
+								</ul>
+							</li>
+							<li><a href="custom.html"><img src="images/nav_icon/custom_icon.png"/>&nbsp;Custom</a></li>
+							<li ><a href="product.php" ><img src="images/nav_icon/product_icon.png"/>&nbsp;Products</a></li>
+							<li><a href="contact.html"><img src="images/nav_icon/contact_icon.png"/>&nbsp;Contact</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-6 col-md-offset-1 responsive-contact-header">
+						<div class="row">
+							<div class="col-md-6 ">
+								<ul class="header-contact-info">
+									<li class="contact-icon">
+										<img src="images/phone_icon.png"/>
+									</li>
+									<li>
+									<div class="contact-heading">Phone</div>
+									<p>+91 7470813333</p>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6 responsive-shift-top">
+								<ul class="header-contact-info ">
+									<li class="contact-icon"><img src="images/envelope_icon.png"/></li>
+									<li>
+									<div class="contact-heading">Email</div>
+									<p>info@radiantstationery.com</p>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-md-2">
+					<a href="#" data-toggle="modal" data-target="#enquiry_modal"><button class="btn-new-request" >Business Enquiry</button></a>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="top-menu navbar-design">
+			<div class="container">
+				<div class="row">
+					
+					<div >
+					<div class="nav-section">
+						<ul id="desktop-nav">
+						<li class="active">
+							</li>
+							<li class="active has-dropdown" id="home-nav">
+							<a href="index.html"><img src="images/nav_icon/home_icon.png"/>&nbsp;The Company
+							</a>
+								<ul class="dropdown sub-category">
+									<li><a href="philosophy.html"><img src="images/philosophy.png"/>&nbsp;Our Philosophy</a></li>
+									<li><a href="sustainability.html"><img src="images/sustainability.png"/>&nbsp;Sustainability</a></li>
+								</ul>
+
+							</li>
+							
+							<li id="custom-nav"><a href="custom.html"><img src="images/nav_icon/custom_icon.png"/>&nbsp;Custom</a></li>
+							<li id="product-nav"><a href="product.php"><img src="images/nav_icon/product_icon.png"/>&nbsp;Products</a></li>
+							<li id="contact-nav"><a href="contact.html"><img src="images/nav_icon/contact_icon.png"/>&nbsp;Contact</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+
+	
+</div>
+
+	</div>
+
+	
+	
+	<!-- jQuery -->
+
+	
+	<script src="js/main.js"></script>
+
+
+	<script type="text/javascript">
+	
+
+	
+
+	var x =window.location.href;
+    var y = x.split('/');
+    var z= y[3]
+
+
+    if(z=="index.html"){
+    	
+    	$("#home-nav").addClass("active");
+    	$("#custom-nav").removeClass("active");
+    	$("#product-nav").removeClass("active");
+    	$("#contact-nav").removeClass("active");
+    }
+
+
+    if(z=="custom.html"){
+    	
+    	$("#custom-nav").addClass("active");
+    	$("#home-nav").removeClass("active");
+    	$("#product-nav").removeClass("active");
+    	$("#contact-nav").removeClass("active");
+    }
+
+    if(z=="product.php"){
+    	
+    	$("#product-nav").addClass("active");
+    	$("#custom-nav").removeClass("active");
+    	$("#home-nav").removeClass("active");
+    	$("#contact-nav").removeClass("active");
+    }
+
+     if(z=="contact.html"){
+    	
+    	$("#contact-nav").addClass("active");
+    	$("#product-nav").removeClass("active");
+    	$("#home-nav").removeClass("active");
+    	$("#custom-nav").removeClass("active");
+    }
+
+
+    
+	</script>
+
+	</body>
+</html>
+
